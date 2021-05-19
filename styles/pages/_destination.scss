@@ -1,0 +1,120 @@
+.main {
+    width: 100%;
+    h1 {
+        font-weight: 500;
+        margin-bottom: 1rem;
+        @include media(">=tablet-landscape") {
+            font-size: 2rem;
+        }
+    }
+    h2 {
+        font-size: 2rem;
+        @include media(">=tablet-landscape") {
+            font-size: 2.6rem;
+        }
+    }
+    hr {
+        border: none;
+        height: 0.1rem;
+        width: 20%;
+        background-color: var(--color-orange);
+    }
+}
+.main__destination {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+.main__destination__grid {
+    @include grid-destination();
+    img {
+        display: none;
+        @include media(">=tablet-landscape") {
+            display: block;
+        }
+    }
+    
+}
+.main__text {
+    padding: 0 2rem;
+}
+.main__search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20rem;
+    background-color: var(--color-blue);
+    h1 {
+        color: white;
+        width: 60%;
+    }
+    img {
+        display: block;
+        width: 4rem;
+        margin-top: 1rem;
+    }
+    @include media(">=tablet-landscape") {
+        display: none;
+    }
+}
+.main__searchButton {
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.main__ports {
+    margin: 5rem auto;
+    @include media(">=tablet-landscape") {
+        margin: 10rem auto 5rem auto;
+    }
+}
+.main__ports__grid {
+    @include grid-ports();
+}
+.main__bottom {
+    max-width: 142rem;
+    margin: auto;
+}
+.main__mediterraneanPorts {
+    margin: 2rem auto 0 auto;
+    @include media(">=tablet-landscape") {
+        margin-top: 8rem;
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+        background-image: url("./../images/world.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 60%;
+    }
+    h1 {
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        padding-left: 4rem;
+    }
+}
+.main__mediterraneanList {
+    @include grid-portsList();
+}
+.main__portsList {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    ul {
+        line-height: 3.4rem;
+        li {
+            color: var(--color-blue);
+        }
+    }
+}
+.main__portsList--desktop {
+    display: none;
+    @include media(">=tablet-landscape") {
+        display: block;
+    }
+}

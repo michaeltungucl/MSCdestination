@@ -1,0 +1,18 @@
+:root {
+    --color-blue:  rgb(1, -0, 54);
+    --color-orange: rgb(255, 93, 0);
+    --color-grey-light: lightgrey;
+
+    --font-family-sans: 'Sans-serif', Arial;
+}
+
+$breakpoints: (
+    // 414px,
+    mobile: 25.875em,
+    // 768px,
+    tablet: 48em,
+    // 1024px,
+    tablet-landscape: 64em,
+    // 1366px
+    desktop: 85.375em
+);

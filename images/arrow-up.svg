@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>down-arrow</title>
+    <g id="Design-5-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Menu-Smartphone-open-2nd-level" transform="translate(-276.000000, -232.000000)" stroke="#FF690E" stroke-width="2">
+            <polyline id="down-arrow" transform="translate(285.000000, 237.500000) rotate(-180.000000) translate(-285.000000, -237.500000) " points="277 234.005123 285 241 293 234"></polyline>
+        </g>
+    </g>
+</svg>
