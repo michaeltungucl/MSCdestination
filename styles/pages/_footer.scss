@@ -3,6 +3,7 @@
     width: 100%;
     p {
         color: white;
+        cursor: pointer;
     }
     h2 {
         color: white;
@@ -74,6 +75,7 @@
         padding-left: 2rem;
     }
     button {
+        cursor: pointer;
         width: 30%;
         border: none;
         background-color: var(--color-orange);

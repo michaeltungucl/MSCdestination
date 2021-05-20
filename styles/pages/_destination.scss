@@ -53,12 +53,14 @@
         display: block;
         width: 4rem;
         margin-top: 1rem;
+        cursor: pointer;
     }
     @include media(">=tablet-landscape") {
         display: none;
     }
 }
 .main__searchButton {
+    cursor: pointer;
     background-color: var(--color-orange);
     color: white;
     border: none;
@@ -75,6 +77,9 @@
 }
 .main__ports__grid {
     @include grid-ports();
+    img {
+        cursor: pointer;
+    }
 }
 .main__bottom {
     max-width: 142rem;
@@ -108,6 +113,7 @@
     ul {
         line-height: 3.4rem;
         li {
+            cursor: pointer;
             color: var(--color-blue);
             @include media(">=tablet-landscape") {
                 text-decoration: underline;

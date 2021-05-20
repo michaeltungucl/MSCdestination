@@ -162,6 +162,7 @@ h2 {
   display: block;
   width: 4rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 @media (min-width: 64em) {
@@ -171,6 +172,7 @@ h2 {
 }
 
 .main__searchButton {
+  cursor: pointer;
   background-color: var(--color-orange);
   color: white;
   border: none;
@@ -210,6 +212,10 @@ h2 {
     padding-right: 0;
     max-width: 142rem;
   }
+}
+
+.main__ports__grid img {
+  cursor: pointer;
 }
 
 .main__bottom {
@@ -268,6 +274,7 @@ h2 {
 }
 
 .main__portsList ul li {
+  cursor: pointer;
   color: var(--color-blue);
 }
 
@@ -294,6 +301,7 @@ h2 {
 
 .footer p {
   color: white;
+  cursor: pointer;
 }
 
 .footer h2 {
@@ -431,6 +439,7 @@ h2 {
 }
 
 .footer__searchbox button {
+  cursor: pointer;
   width: 30%;
   border: none;
   background-color: var(--color-orange);
@@ -494,6 +503,7 @@ h2 {
 
 .nav__logo {
   margin: auto 0 auto 10px;
+  cursor: pointer;
 }
 
 .nav__icons {
@@ -534,7 +544,7 @@ h2 {
           align-items: center;
   background-color: white;
   position: absolute;
-  top: 7rem;
+  top: 5rem;
   right: 0;
   left: 0;
   width: 100%;
@@ -561,6 +571,15 @@ h2 {
   border-bottom: solid 1px var(--color-grey-light);
   padding-bottom: 4px;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__search input {
+  border: none;
+  width: 100%;
+  outline: none;
 }
 
 .nav__onboard {
@@ -587,6 +606,7 @@ h2 {
 }
 
 .nav__desktop h3 {
+  cursor: pointer;
   color: white;
   font-size: 1rem;
   font-weight: 200;
@@ -630,35 +650,41 @@ h2 {
   content: "\e900";
   color: #fff;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .icon-instagram:before {
   content: "\e901";
   color: #fff;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .icon-linkedin:before {
   content: "\e902";
   color: #fff;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .icon-pinterest:before {
   content: "\e903";
   color: #fff;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .icon-twitter:before {
   content: "\e904";
   color: #fff;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .icon-youtube:before {
   content: "\e905";
   color: #fff;
   font-size: 3rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
