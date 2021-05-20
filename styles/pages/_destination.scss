@@ -109,6 +109,9 @@
         line-height: 3.4rem;
         li {
             color: var(--color-blue);
+            @include media(">=tablet-landscape") {
+                text-decoration: underline;
+            }
         }
     }
 }
