@@ -149,7 +149,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20rem;
+  height: 24rem;
   background-color: var(--color-blue);
 }
 
