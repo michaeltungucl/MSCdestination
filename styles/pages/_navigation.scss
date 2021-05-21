@@ -56,6 +56,16 @@
     cursor: pointer;
     margin-top: 2.4rem;
 }
+.nav__searchDesktop {
+    display: flex;
+    margin-left: 4rem;
+    input {
+        border: none;
+        width: 100%;
+        outline: none;
+        background-color: transparent;
+    }
+}
 .nav__search {
     border-bottom: solid 1px var(--color-grey-light);
     padding-bottom: 4px;

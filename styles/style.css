@@ -39,6 +39,20 @@ img {
           box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 h1 {
   color: #010036;
   text-align: center;
@@ -64,8 +78,9 @@ h2 {
 }
 
 .main h1 {
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1rem;
+  font-size: 2.6rem;
 }
 
 @media (min-width: 64em) {
@@ -76,6 +91,7 @@ h2 {
 
 .main h2 {
   font-size: 2rem;
+  font-weight: 300;
 }
 
 @media (min-width: 64em) {
@@ -84,9 +100,21 @@ h2 {
   }
 }
 
+.main h3 {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.main p {
+  line-height: 2.8rem;
+  color: var(--color-blue);
+  font-weight: 300;
+}
+
 .main hr {
   border: none;
-  height: 0.1rem;
+  height: 2px;
   width: 20%;
   background-color: var(--color-orange);
 }
@@ -99,7 +127,13 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2rem auto;
+  margin: 4rem auto;
+}
+
+@media (min-width: 64em) {
+  .main__destination {
+    margin: 8rem auto;
+  }
 }
 
 .main__destination__grid {
@@ -133,6 +167,7 @@ h2 {
 
 .main__text {
   padding: 0 2rem;
+  margin-bottom: 4rem;
 }
 
 .main__search {
@@ -150,12 +185,15 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   height: 24rem;
-  background-color: var(--color-blue);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000062), to(#000033));
+  background-image: linear-gradient(#000062, #000033);
+  padding: 2rem 0;
 }
 
-.main__search h1 {
+.main__search h2 {
   color: white;
-  width: 60%;
+  width: 80%;
+  text-align: center;
 }
 
 .main__search img {
@@ -221,10 +259,12 @@ h2 {
 .main__bottom {
   max-width: 142rem;
   margin: auto;
+  background-color: whitesmoke;
 }
 
 .main__mediterraneanPorts {
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
+  padding-top: 3rem;
 }
 
 @media (min-width: 64em) {
@@ -275,7 +315,14 @@ h2 {
 
 .main__portsList ul li {
   cursor: pointer;
+}
+
+.main__portsList ul li a {
+  text-decoration: none;
   color: var(--color-blue);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media (min-width: 64em) {
@@ -310,7 +357,7 @@ h2 {
 
 .footer hr {
   background-color: white;
-  height: 1px;
+  height: 2px;
   width: 100%;
   margin-top: 2rem;
 }
@@ -319,6 +366,14 @@ h2 {
   .footer hr {
     display: none;
   }
+}
+
+.footer a {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__wrap {
@@ -381,9 +436,10 @@ h2 {
 
 .footer__accordion-header::after {
   content: '\002B';
-  font-size: 2rem;
+  font-size: 3.2rem;
   position: absolute;
   right: 1rem;
+  top: -1.4rem;
   color: var(--color-orange);
 }
 
@@ -444,6 +500,14 @@ h2 {
   border: none;
   background-color: var(--color-orange);
   color: white;
+}
+
+.footer__searchbox button a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__socialsLinks {
@@ -565,6 +629,20 @@ h2 {
   border-bottom: solid 1px var(--color-grey-light);
   cursor: pointer;
   margin-top: 2.4rem;
+}
+
+.nav__searchDesktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4rem;
+}
+
+.nav__searchDesktop input {
+  border: none;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
 }
 
 .nav__search {

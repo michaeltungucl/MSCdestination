@@ -36,5 +36,12 @@ const burgerLinkToggle = () => {
     })
 }
 
+const accordionItemHeaders = document.querySelectorAll('.footer__accordion-header');
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener('click', (e) => {
+        accordionItemHeader.classList.toggle('active');
+    })
+})
+
 burgerLinkToggle();
 burgerToggle();
